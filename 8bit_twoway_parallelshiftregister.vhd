@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity haram is
+entity bi_shifter is
 	port(
 	sil, sir : in std_logic;
 	mode : in std_logic_vector(1 downto 0);
@@ -13,10 +13,10 @@ entity haram is
 	sol, sor : out std_logic;
 	dataout  : out std_logic_vector(7 downto 0) );
 
-end haram;
+end bi_shifter;
 
 
-architecture lefty of haram is
+architecture lefty of bi_shifter is
 	signal shift_register : std_logic_vector(7 downto 0);
 
 begin
